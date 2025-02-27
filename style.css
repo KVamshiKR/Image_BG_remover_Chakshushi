@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Signika:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.nav{
+    display: flex;   
+    background-color: black;
+    justify-content: space-between;
+    padding: 20px;
+    height: 7vh;
+    align-items: center;
+    width: 100vw;
+    text-align: center;
+            
+}
+
+.logo{
+cursor: pointer;
+position: relative;
+top: 2px;
+}
+
+.title{
+    font-size: 30px;
+    /* font-family: "Merriweather", serif; */
+    /* font-family: "Jersey 15", serif; */
+    font-family: "Arsenal SC", serif;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+
+.linkbuttons button{
+    background-color: rgb(0, 110, 255);
+    padding: 5px;
+    font-size: 20px;
+    font-family: "Arsenal SC", serif;
+    font-weight: 700;
+    width: 100px;
+    border: 1px solid white;
+    color: white;
+}
+
+.first_section{
+    height: 93vh;
+    background-color: #fbd4fb;
+    padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  display: flex;
+}
+
+.uploadsection{
+  border: solid 2px red;
+  width: 40vw;
+  height: 100%;
+  display: flex;
+position: relative;
+justify-content: center;
+background: linear-gradient(-60deg, red, magenta, black);
+	background-size: 400% 400%;
+	 animation: gradient 4s ease infinite;
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#droparea{
+  border: 3px dashed rgb(255, 255, 255) ;
+  width: 80%;
+  height: 70%;
+  position: relative;
+  top: 6vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fbd4fb;
+  cursor: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAzElEQVRYR+2X0Q6AIAhF5f8/2jYXZkwEjNSVvVUjDpcrGgT7FUkI2D9xRfQETwNIiWO85wfINfQUEyxBG2ArsLwC0jioGt5zFcwF4OYDPi/mBYKm4t0U8ATgRm3ThFoAqkhNgWkA0jJLvaOVSs7j3qMnSgXWBMiWPXe94QqMBMBc1VZIvaTu5u5pQewq0EqNZvIEMCmxAawK0DNkay9QmfFNAJUXfgGgUkLaE7j/h8fnASkxHTz0DGIBMCnBeeM7AArpUd3mz2x3C7wADglA8BcWMZhZAAAAAElFTkSuQmCC'), default;
+}
+
+.dropbox{
+ font-family: "Arsenal SC", serif; 
+ padding: 10px;
+}
+
+.dropbox h1{
+font-size: 40px;
+}
+
+.dropbox span{
+font-size: 20px;
+font-weight: 700;
+}
+
+
+
+.downloadsection{
+  border: solid 2px black;
+  width: 60vw;
+  height: 100%;
+  margin: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+flex-direction: column;
+}
+
+.removeBgBtn{
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-right: rgb(195, 195, 195) 7px  solid;
+  border-bottom: rgb(109, 109, 109) 7px solid;
+  border-radius: 5px;
+  font-family: "Arsenal SC", serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.removeBgBtn:hover {
+  background-color: #e3e6ea;
+  color: #39393a;
+}
+
+#resultContainer {
+  margin: 20px;
+  border: 1px solid black;
+  width: 80%;
+  height: 60%;
+  /* display: none; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#resultImage {
+  max-width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: none;
+}
+
+.downloadbtn{
+  background-color: #ff0077;
+  color: #ffffff;
+  font-family: "Arsenal SC", serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-decoration: none;
+  border-right: rgb(195, 195, 195) 7px  solid;
+  border-bottom: rgb(109, 109, 109) 7px solid;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 10px;
+}
+
+
+.downloadbtn:hover {
+  background-color: #e3e6ea;
+  color: #39393a;
+}
+
+
+@media (max-width: 1024px) {
+  .logo svg{
+    width: 60px;
+    height: 60px;
+    }
+    
+    .title{
+      font-size: 20px;
+      /* font-family: "Merriweather", serif; */
+      /* font-family: "Jersey 15", serif; */
+      font-family: "Arsenal SC", serif;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+  }
+
+  .first_section{
+    height: 93vh;
+    background-color: #fbd4fb;
+    padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.uploadsection{
+  border: solid 1px red;
+  width: 100%;
+  height: 50%;
+  display: flex;
+position: relative;
+justify-content: center;
+background: linear-gradient(-60deg, red, magenta, black);
+	background-size: 400% 400%;
+	 animation: gradient 4s ease infinite;
+}
+
+#droparea{
+  width: 90%;
+  height: 90%;
+  top: 3vw;
+}
+
+
+  .linkbuttons button{
+    background-color: rgb(0, 110, 255);
+    padding: 2px;
+    font-size: 10px;
+    font-family: "Arsenal SC", serif;
+    font-weight: 700;
+    width: 50px;
+    border: 1px solid white;
+    color: white;
+  }
+
+
+  .downloadsection{
+    border: solid 2px black;
+    width: 100%;
+    height: 50%;
+    margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(0, 179, 255);
+  }
+
+  .removeBgBtn{
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border-right: rgb(195, 195, 195) 3px  solid;
+    border-bottom: rgb(109, 109, 109) 3px solid;
+    border-radius: 2px;
+    font-family: "Arsenal SC", serif;
+    font-weight: 700;
+    font-size: 10px;
+    margin: 5px;
+  }
+  
+  .downloadbtn{
+    background-color: #ff0077;
+    color: #ffffff;
+    font-family: "Arsenal SC", serif;
+    font-weight: 700;
+    font-size: 10px;
+    text-decoration: none;
+    border-right: rgb(195, 195, 195) 3px  solid;
+    border-bottom: rgb(109, 109, 109) 3px solid;
+    border-radius: 2px;
+    padding: 5px 10px;
+    margin: 5px;
+  }
+  
+  #resultContainer {
+    margin: 10px;
+    border: 1px solid black;
+    width: 90%;
+    height: 80%;
+    /* display: none; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fbd4fb;
+  }
+
+  .downbtns{
+    display: flex;
+  }
+
+}

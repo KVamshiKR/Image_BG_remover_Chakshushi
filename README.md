@@ -17,7 +17,7 @@ Image Background Remover - Chakshushi is a web application that allows users to 
 - **remove.bg API** – Background removal functionality
 
 ## 📷 Demo
-🔗 [Live Demo](#) (Add your deployed project link here)
+🔗 [Live Demo](https://kvamshikr.github.io/Image_BG_remover_Chakshushi/)
 
 
 ## ⚙️ Usage
